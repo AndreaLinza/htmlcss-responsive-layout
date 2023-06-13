@@ -1,0 +1,71 @@
+/* default container */
+.container-md{
+    padding: 0 40px;
+}
+.container-sm{
+    padding: 0 100px;
+}
+.container-xs{
+    padding: 0 25%;
+}
+.container-xxs{
+    padding: 0 30%;
+}
+
+/* Image  */
+img{
+    width: 100%;
+    object-fit: contain;
+}
+
+i{
+    color: var(--color-primary-blue);
+    font-size: 6rem;
+}
+strong{
+    font-size: 1rem;
+    padding-left: .5rem;
+    letter-spacing: 2px;
+}
+.text-blue{
+    color: var(--color-primary-blue);
+}
+.text-align{
+    text-align: center;
+}
+
+.pd-1all{
+    padding: 1rem;
+}
+.pd-2all{
+    padding: 2rem;
+}
+.pd-1t-1b{
+    padding: 1rem 0;
+}
+.pd-2t-2b{
+    padding: 2rem 0;
+}
+.pd-1r-1l{
+    padding: 0 1rem;
+}
+.pd-2r-2l{
+    padding: 0 2rem;
+}
+
+.mg-2all{
+    margin: 2rem;
+}
+.mg-2t-2b{
+    margin: 2rem 0;
+}
+.mg-2t{
+    margin-top: 2rem;
+}
+
+.default-bt{
+border: 0;
+padding: .9rem 4.5rem;
+border-radius: 1.5rem;
+}
+
