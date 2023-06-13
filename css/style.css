@@ -47,31 +47,33 @@ section{
 .nav-container .row img {
     width: auto;
 }
-.demo-container .row{
+.demo-container .row, .testimonial-container .row, .benefit-container .row{
     flex-direction: column;
 }
 
 .blue-bt {
     color: white;
     background-color: var(--color-primary-blue);
+
 }
-.row-description{
-    padding: 0 2rem;
+.purple-bt{
+    color: white;
+    background-color: var(--color-primary-purple);
 }
+
 .row-description button i{
     color: white;
     font-size: 1.2rem;
 }
 
 .col{
-    background-color: var(--color-secondary-blue);
-    border-radius: 1rem;
+
     flex-grow: 1;
     flex-basis: 100%;
 }
-.flex{
-    display: flex;
-    flex-direction: column;
+.demo-card{
+    background-color: var(--color-secondary-blue);
+    border-radius: 1rem; 
 }
 
 .col-1-3{
@@ -84,12 +86,12 @@ section{
     flex-basis: 50%;
 }
 
-.strategic-container .col{
+.strategic-card, .testimonial-card{
     background-color: var(--color-primary-purple);
     border-radius: 3rem;
     color: white;
 }
-.strategic-container .col:last-child{
+.strategic-card:last-child{
     background-color: white;
     color: black;
 }
@@ -105,6 +107,29 @@ section{
     background-color: var(--color-primary-purple);
     font-size: 1rem;
 }
+
+.testimonial-card{
+    background-color: var(--color-primary-purple);
+}
+
+.testimonial-container img{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;   
+}
+
+.testimonial-card strong{
+    font-size: 2.5rem;
+}
+.benefit-card{
+    color: var(--color-primary-purple);
+    background-color: white;
+    border-radius: 2rem;
+    padding:2rem;
+}
+
+
+
 
 
 
