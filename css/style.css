@@ -59,27 +59,46 @@ section {
     font-size: 26px;
     position: relative;
 }
+.open-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 
 .nav-menu {
-    display: none; 
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
 }
-nav ul{   
+.nav-menu ul{
     list-style: none;
 }
+nav ul li{
+    border-bottom: 1px solid white;
+}
+nav ul li:last-child{
+    border: 0;
+}
+nav ul li button{
+    margin-top: .5rem;
+}
 
-nav ul li a{
+nav ul li a {
+    padding: .5rem 0;
     color: white;
     text-decoration: none;
 }
 
-.nav-dot:hover .nav-menu{
+.open-menu:hover  .nav-menu{
     display: block;
 }
 
 .nav-container .row img {
     width: auto;
 }
-.demo-container{
+
+.demo-container {
     margin-top: 5rem;
 }
 
@@ -252,6 +271,7 @@ footer a {
         width: 100%;
         max-width: 972px;
     }
+
     .col-full-with-desktop {
         flex-basis: 100%;
     }
@@ -269,42 +289,55 @@ footer a {
     }
 
     .nav-menu {
-        display: flex;
+        display: block;
+        width: auto;
+    }
+    .open-menu{
+        width: auto;
     }
 
     nav ul {
         list-style: none;
         display: flex;
+        align-items: center;
     }
 
     nav ul li {
         color: white;
+        border-bottom: 0;
+        
+    }
+    nav ul li button{
+        margin: 0;
     }
 
     .nav-dot {
         display: none;
     }
 
-    .row-description .col{
-        display: flex;  
-    } 
-    .row-description .col-2-3-medium{
+    .row-description .col {
+        display: flex;
+    }
+
+    .row-description .col-2-3-medium {
         align-items: bottom;
         flex-direction: column;
-    } 
-    .row-description .col-1-2-medium:last-child {
-        flex-direction: column-reverse; 
-        margin: 0 2rem; 
     }
-    .row-description .col-1-2-medium:last-child img{
+
+    .row-description .col-1-2-medium:last-child {
+        flex-direction: column-reverse;
+        margin: 0 2rem;
+    }
+
+    .row-description .col-1-2-medium:last-child img {
         margin-bottom: 0;
     }
 }
 
 @media screen and (min-width: 992px) {
-    .container{
+    .container {
         max-width: 1200px;
         width: 100%;
-    } 
+    }
 
 }
